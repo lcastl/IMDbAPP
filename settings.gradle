@@ -14,3 +14,12 @@ dependencyResolutionManagement {
 }
 rootProject.name = "IMDbApp"
 include ':app'
+include ':core'
+include ':components'
+include ':features'
+include ':features:login:presentation'
+include ':features:login:domain'
+include ':features:login:data'
+include ':features:home:presentation'
+include ':features:home:data'
+include ':features:home:domain'

@@ -41,7 +41,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Compose.composeVersion
+        kotlinCompilerExtensionVersion = Kotlin.compileExtVersion
     }
     packagingOptions {
         resources {
@@ -51,6 +51,8 @@ android {
 }
 
 dependencies {
+    implementation(project(Modules.core))
+    implementation(project(Modules.loginDomain))
 
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.lifeCycleRuntimeKtx)

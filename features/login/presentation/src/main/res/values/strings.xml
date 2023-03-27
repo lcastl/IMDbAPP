@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="show_password">Show Password</string>
+    <string name="hide_password">Hide Password</string>
+    <string name="screen_title">IMDb</string>
+    <string name="user_name">Usuario</string>
+    <string name="person_icon">Person Icon</string>
+    <string name="password">Contraseña</string>
+    <string name="lock_icon">Lock Icon</string>
+    <string name="forgot_password">Olvidaste la contraseña?</string>
+    <string name="login_button">Login</string>
+    <string name="create_account">Crear una cuenta</string>
+    <string name="name">Nombre</string>
+    <string name="email">Correo electrónico</string>
+    <string name="email_icon">Email Icon</string>
+    <string name="password_constraint">la contraseña debe contener minimo 8 caracteres</string>
+    <string name="accept_button">Aceptar</string>
+</resources>

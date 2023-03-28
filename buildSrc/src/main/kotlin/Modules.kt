@@ -10,6 +10,8 @@ object Modules {
 
     const val loginDomain = ":features:login:domain"
 
+    const val loginPresentation = ":features:login:presentation"
+
     const val homeDomain = ":features:home:domain"
 
 }

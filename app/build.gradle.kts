@@ -53,6 +53,7 @@ android {
 dependencies {
     implementation(project(Modules.core))
     implementation(project(Modules.loginDomain))
+    implementation(project(Modules.loginPresentation))
 
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.lifeCycleRuntimeKtx)

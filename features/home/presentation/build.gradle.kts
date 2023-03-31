@@ -1,5 +1,5 @@
 apply {
-    from("$rootDir/android-library-build.gradle")
+    from("$rootDir/android-library-ui-build.gradle")
 }
 
 dependencies {

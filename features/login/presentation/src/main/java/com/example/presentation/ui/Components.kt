@@ -1,4 +1,4 @@
-package com.example.presentation
+package com.example.presentation.ui
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.fillMaxWidth

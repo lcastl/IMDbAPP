@@ -5,8 +5,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.imdbapp.ui.SplashScreen
-import com.example.presentation.LoginScreen
-import com.example.presentation.RegisterScreen
+import com.example.presentation.ui.LoginScreen
+import com.example.presentation.ui.RegisterScreen
 
 
 @Composable
@@ -27,13 +27,13 @@ fun SetupNavGraph(
         composable(
             route = AppScreens.LoginScreen.route
         ) {
-            LoginScreen(navController = navController)
+            LoginScreen { navController.navigate(route = AppScreens.RegisterScreen.route) }
         }
 
         composable(
             route = AppScreens.RegisterScreen.route
         ) {
-            RegisterScreen(navController = navController)
+            RegisterScreen(navController = navController) { navController.navigate(route = AppScreens.LoginScreen.route) }
         }
     }
 }

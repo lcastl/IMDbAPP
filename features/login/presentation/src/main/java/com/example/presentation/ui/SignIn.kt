@@ -1,4 +1,4 @@
-package com.example.presentation
+package com.example.presentation.ui
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -17,12 +17,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import com.example.imdbapp.R
 
 @Composable
 fun RegisterScreen(
-    navController: NavController
+    navController: NavController,
+    navigateEvent: () -> Unit
 ) {
     var name by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
@@ -96,7 +96,7 @@ fun RegisterScreen(
                 shape = RoundedCornerShape(size = 8.dp),
                 onClick = {
                     navController.popBackStack()
-                    //navController.navigate(route = AppScreens.LoginScreen.route)
+                    navigateEvent()
                 }) {Text(stringResource(R.string.accept_button), fontSize = 18.sp)
             }
         }

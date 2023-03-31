@@ -45,6 +45,16 @@ android {
 }
 
 dependencies {
+
+    implementation(AndroidX.coreKtx)
+    implementation(AndroidX.lifeCycleRuntimeKtx)
+    implementation(Compose.activity)
+    implementation(Compose.ui)
+    implementation(Compose.toolingPreview)
+    implementation(Compose.material)
+    debugImplementation(Compose.tooling)
+    implementation(Compose.navigation)
+    implementation(Compose.icons)
     implementation(Hilt.android)
     kapt(Hilt.compiler)
 }

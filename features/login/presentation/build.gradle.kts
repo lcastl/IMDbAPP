@@ -5,4 +5,5 @@ apply {
 dependencies {
     "implementation"(project(Modules.loginDomain))
     "implementation"(project(Modules.core))
+    "implementation"(project(Modules.components))
 }

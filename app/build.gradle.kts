@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.imdbapp"
+    namespace = "com.lac.imdbapp"
     compileSdk = Android.compileSdk
 
     defaultConfig {
@@ -24,18 +24,19 @@ android {
 
     buildTypes {
         getByName("release") {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     buildFeatures {
         compose = true
@@ -54,6 +55,7 @@ dependencies {
     implementation(project(Modules.core))
     implementation(project(Modules.loginDomain))
     implementation(project(Modules.loginPresentation))
+    implementation(project(Modules.components))
 
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.lifeCycleRuntimeKtx)

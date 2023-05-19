@@ -1,5 +1,5 @@
 object Android {
-    const val applicationId = "com.example.imdbapp"
+    const val applicationId = "com.lac.imdbapp"
     const val compileSdk = 33
     const val buildToolsVersion = "30.0.3"
     const val minSdk = 23
